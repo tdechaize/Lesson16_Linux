@@ -1,0 +1,3 @@
+/home/thierry/Sources/Opengl/Lesson16/build.cmake/gcc64/Release/CMakeFiles/lesson16.dir
+/home/thierry/Sources/Opengl/Lesson16/build.cmake/gcc64/Release/CMakeFiles/edit_cache.dir
+/home/thierry/Sources/Opengl/Lesson16/build.cmake/gcc64/Release/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/clang -Wall -std=c11  -s -DNDEBUG -std=c11 -m64 CMakeFiles/lesson16.dir/src/lesson16.c.o CMakeFiles/lesson16.dir/src/logger.c.o -o /home/thierry/Sources/Opengl/Lesson16/binclang64/Release/lesson16.exe  -lX11 -lXxf86vm -lXext -lGL -lglut -lGLU -lm 
