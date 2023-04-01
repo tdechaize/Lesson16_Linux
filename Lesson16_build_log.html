@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>lesson16 build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>01-04-2023 at 19:25.04</u><br />
+Build ended on: <u>01-04-2023 at 19:25.06</u><p />
+<b>-------------- Build: GNUC 32b Debug in lesson16 (compiler: GNU GCC Compiler 32b)---------------</b><br />
+gcc -Wall -g -D_DEBUG -DDEBUG -m32 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson16/src/lesson16.c -o objgcc32/Debug/src/lesson16.o<br />
+gcc -Wall -g -D_DEBUG -DDEBUG -m32 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson16/src/logger.c -o objgcc32/Debug/src/logger.o<br />
+/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c: In function ‘xMainLoop’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:735:8: warning: variable ‘needRedraw’ set but not used [-Wunused-but-set-variable]</font><br />
+  735 |   Bool needRedraw = False;<br />
+      |        ^~~~~~~~~~<br />
+gcc -L/usr/lib/i386-linux-gnu -o bingcc32/Debug/lesson16.exe objgcc32/Debug/src/lesson16.o objgcc32/Debug/src/logger.o  -m32  -lGL -lglut -lGLU -lm -lX11<br />
+Output file is bingcc32/Debug/lesson16.exe with size 48,06 KB<br />
+<b>-------------- Build: GNUC 32b Release in lesson16 (compiler: GNU GCC Compiler 32b)---------------</b><br />
+gcc -Wall -m32 -DNDEBUG -m32 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson16/src/lesson16.c -o objgcc32/Release/src/lesson16.o<br />
+gcc -Wall -m32 -DNDEBUG -m32 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson16/src/logger.c -o objgcc32/Release/src/logger.o<br />
+/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c: In function ‘xMainLoop’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:735:8: warning: variable ‘needRedraw’ set but not used [-Wunused-but-set-variable]</font><br />
+  735 |   Bool needRedraw = False;<br />
+      |        ^~~~~~~~~~<br />
+gcc -L/usr/lib/i386-linux-gnu -o bingcc32/Release/lesson16.exe objgcc32/Release/src/lesson16.o objgcc32/Release/src/logger.o  -m32 -m32  -lGL -lglut -lGLU -lm -lX11<br />
+Output file is bingcc32/Release/lesson16.exe with size 25,97 KB<br />
+<b>-------------- Build: GNUC 64b Debug in lesson16 (compiler: GNU GCC Compiler)---------------</b><br />
+gcc -Wall -g -D_DEBUG -DDEBUG -m64 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson16/src/lesson16.c -o objgcc64/Debug/src/lesson16.o<br />
+gcc -Wall -g -D_DEBUG -DDEBUG -m64 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson16/src/logger.c -o objgcc64/Debug/src/logger.o<br />
+/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c: In function ‘xInitWindow’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:451:26: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]</font><br />
+  451 |                          (int) argc,<br />
+      |                          ^<br />
+/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c: In function ‘xMainLoop’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:735:8: warning: variable ‘needRedraw’ set but not used [-Wunused-but-set-variable]</font><br />
+  735 |   Bool needRedraw = False;<br />
+      |        ^~~~~~~~~~<br />
+gcc -L/usr/lib/x86_64-linux-gnu -o bingcc64/Debug/lesson16.exe objgcc64/Debug/src/lesson16.o objgcc64/Debug/src/logger.o  -m64  -lGL -lglut -lGLU -lm -lX11<br />
+Output file is bingcc64/Debug/lesson16.exe with size 54,11 KB<br />
+<b>-------------- Build: GNUC 64b Release in lesson16 (compiler: GNU GCC Compiler)---------------</b><br />
+gcc -Wall -O2 -DNDEBUG -m64 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson16/src/lesson16.c -o objgcc64/Release/src/lesson16.o<br />
+gcc -Wall -O2 -DNDEBUG -m64 -I/usr/include -c /home/thierry/Sources/Opengl/Lesson16/src/logger.c -o objgcc64/Release/src/logger.o<br />
+/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c: In function ‘xInitWindow’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:451:26: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]</font><br />
+  451 |                          (int) argc,<br />
+      |                          ^<br />
+/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c: In function ‘xMainLoop’:<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:735:8: warning: variable ‘needRedraw’ set but not used [-Wunused-but-set-variable]</font><br />
+  735 |   Bool needRedraw = False;<br />
+      |        ^~~~~~~~~~<br />
+gcc -L/usr/lib/x86_64-linux-gnu -o bingcc64/Release/lesson16.exe objgcc64/Release/src/lesson16.o objgcc64/Release/src/logger.o  -s -m64  -lGL -lglut -lGLU -lm -lX11<br />
+Output file is bingcc64/Release/lesson16.exe with size 26,29 KB<br />
+<b>-------------- Build: CLANG 32b Debug in lesson16 (compiler: LLVM Clang Compiler 32b)---------------</b><br />
+clang -Wall -O0 -D_DEBUG -DDEBUG --target=i686-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson16/src/lesson16.c -o objclang32/Debug/src/lesson16.o<br />
+clang -Wall -O0 -D_DEBUG -DDEBUG --target=i686-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson16/src/logger.c -o objclang32/Debug/src/logger.o<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:735:8: warning: variable 'needRedraw' set but not used [-Wunused-but-set-variable]</font><br />
+  Bool needRedraw = False;<br />
+       ^<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:808:22: warning: expression which evaluates to zero treated as a null pointer constant of type 'char *' [-Wnon-literal-null-conversion]</font><br />
+       level_debug = '\0';<br />
+                     ^~~~<br />
+2 warnings generated.<br />
+clang -L/usr/lib/clang/14.0.6/lib/linux -o binclang32/Debug/lesson16.exe objclang32/Debug/src/lesson16.o objclang32/Debug/src/logger.o  --target=i686-pc-linux-gnu  -lGL -lglut -lGLU -lm -lX11<br />
+Output file is binclang32/Debug/lesson16.exe with size 29,90 KB<br />
+<b>-------------- Build: CLANG 32b Release in lesson16 (compiler: LLVM Clang Compiler 32b)---------------</b><br />
+clang -Wall -O2 -DNDEBUG --target=i686-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson16/src/lesson16.c -o objclang32/Release/src/lesson16.o<br />
+clang -Wall -O2 -DNDEBUG --target=i686-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson16/src/logger.c -o objclang32/Release/src/logger.o<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:735:8: warning: variable 'needRedraw' set but not used [-Wunused-but-set-variable]</font><br />
+  Bool needRedraw = False;<br />
+       ^<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:808:22: warning: expression which evaluates to zero treated as a null pointer constant of type 'char *' [-Wnon-literal-null-conversion]</font><br />
+       level_debug = '\0';<br />
+                     ^~~~<br />
+2 warnings generated.<br />
+clang -L/usr/lib/clang/14.0.6/lib/linux -o binclang32/Release/lesson16.exe objclang32/Release/src/lesson16.o objclang32/Release/src/logger.o  -s --target=i686-pc-linux-gnu  -lGL -lglut -lGLU -lm -lX11<br />
+Output file is binclang32/Release/lesson16.exe with size 25,86 KB<br />
+<b>-------------- Build: CLANG 64b Debug in lesson16 (compiler: LLVM Clang Compiler)---------------</b><br />
+clang -Wall -O0 -D_DEBUG -DDEBUG --target=x86_64-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson16/src/lesson16.c -o objclang64/Debug/src/lesson16.o<br />
+clang -Wall -O0 -D_DEBUG -DDEBUG --target=x86_64-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson16/src/logger.c -o objclang64/Debug/src/logger.o<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:451:26: warning: cast to smaller integer type 'int' from 'char **' [-Wpointer-to-int-cast]</font><br />
+                         (int) argc,<br />
+                         ^~~~~~~~~~<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:735:8: warning: variable 'needRedraw' set but not used [-Wunused-but-set-variable]</font><br />
+  Bool needRedraw = False;<br />
+       ^<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:808:22: warning: expression which evaluates to zero treated as a null pointer constant of type 'char *' [-Wnon-literal-null-conversion]</font><br />
+       level_debug = '\0';<br />
+                     ^~~~<br />
+3 warnings generated.<br />
+clang -L/usr/lib/clang/14.0.6/lib/linux -o binclang64/Debug/lesson16.exe objclang64/Debug/src/lesson16.o objclang64/Debug/src/logger.o  --target=x86_64-pc-linux-gnu  -lGL -lglut -lGLU -lm -lX11<br />
+Output file is binclang64/Debug/lesson16.exe with size 32,03 KB<br />
+<b>-------------- Build: CLANG 64b Release in lesson16 (compiler: LLVM Clang Compiler)---------------</b><br />
+clang -Wall -O2 -DNDEBUG --target=x86_64-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson16/src/lesson16.c -o objclang64/Release/src/lesson16.o<br />
+clang -Wall -O2 -DNDEBUG --target=x86_64-pc-linux-gnu -I/usr/lib/clang/14.0.6/include -c /home/thierry/Sources/Opengl/Lesson16/src/logger.c -o objclang64/Release/src/logger.o<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:451:26: warning: cast to smaller integer type 'int' from 'char **' [-Wpointer-to-int-cast]</font><br />
+                         (int) argc,<br />
+                         ^~~~~~~~~~<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:735:8: warning: variable 'needRedraw' set but not used [-Wunused-but-set-variable]</font><br />
+  Bool needRedraw = False;<br />
+       ^<br />
+<font color="#0000ff">/home/thierry/Sources/Opengl/Lesson16/src/lesson16.c:808:22: warning: expression which evaluates to zero treated as a null pointer constant of type 'char *' [-Wnon-literal-null-conversion]</font><br />
+       level_debug = '\0';<br />
+                     ^~~~<br />
+3 warnings generated.<br />
+clang -L/usr/lib/clang/14.0.6/lib/linux -o binclang64/Release/lesson16.exe objclang64/Release/src/lesson16.o objclang64/Release/src/logger.o  -s --target=x86_64-pc-linux-gnu  -lGL -lglut -lGLU -lm -lX11<br />
+Output file is binclang64/Release/lesson16.exe with size 22,91 KB<br />
+<b>-------------- Build: Archive in lesson16 (compiler: GNU GCC Compiler)---------------</b><br />
+rm --interactive=never *.7z || true<br />
+rm: impossible de supprimer '*.7z': Aucun fichier ou dossier de ce type<br />
+rm --interactive=never *.tar || true<br />
+rm: impossible de supprimer '*.tar': Aucun fichier ou dossier de ce type<br />
+python3 /home/thierry/Sources/tools/Size_exec.py lesson16<br />
+        Tableau récapitulatif de la taille des exécutables générés pour le projet : lesson16<br />
+  Debug GCC 32b     :  48.1 KB et sa date dernière modification Sat Apr  1 19:25:04 2023 -&gt; ./bingcc32/Debug/lesson16.exe.<br />
+  Release GCC 32b   :  26.0 KB et sa date dernière modification Sat Apr  1 19:25:04 2023 -&gt; ./bingcc32/Release/lesson16.exe.<br />
+  Debug GCC 64b     :  54.1 KB et sa date dernière modification Sat Apr  1 19:25:04 2023 -&gt; ./bingcc64/Debug/lesson16.exe.<br />
+  Release GCC 64b   :  26.3 KB et sa date dernière modification Sat Apr  1 19:25:04 2023 -&gt; ./bingcc64/Release/lesson16.exe.<br />
+  Debug CLANG 32b   :  29.9 KB et sa date dernière modification Sat Apr  1 19:25:05 2023 -&gt; ./binclang32/Debug/lesson16.exe.<br />
+  Release CLANG 32b :  25.9 KB et sa date dernière modification Sat Apr  1 19:25:05 2023 -&gt; ./binclang32/Release/lesson16.exe.<br />
+  Debug CLANG 64b   :  32.0 KB et sa date dernière modification Sat Apr  1 19:25:05 2023 -&gt; ./binclang64/Debug/lesson16.exe.<br />
+  Release CLANG 64b :  22.9 KB et sa date dernière modification Sat Apr  1 19:25:05 2023 -&gt; ./binclang64/Release/lesson16.exe.<br />
+python3 /home/thierry/Sources/tools/Calc_checksums.py lesson16<br />
+Tableau récapitulatif des différents checksums générés pour le projet : lesson16<br />
+Calcul des cheksums du fichier : ./bingcc32/Debug/lesson16.exe.<br />
+Checksum CRC32  is 3c8c1e95.<br />
+Checksum MD5 is 82aa59986c3ba8daae9e76ff05446eec.<br />
+Checksum SHA256 is 1337ee9180496d2c1f814c72839c1b9169cb84d6c02c7cd1e632882546f0a1ad.<br />
+Checksum SHA512 is 238a4dfd7232c4c63f86426c8f6c42aa2469315e495f642af604d267f5a4fccf8fed0d3c183800f7c8720abfd1154b90c9a4256300d30bf6945344282eb26a1c.<br />
+Checksum RipeMD160 is 82bfc45afb79c942fa1809db340aff56b8f2d555.<br />
+Checksum BLAKE2B is c91b270bb6e0f6541d4cc0ee142984f35f5452f71916cfce4771e9cc2f66c4f90860bc93fa5ea7e395ad2124b19bc0d391869252b2979b9bb4d5ada61f826431.<br />
+Calcul des cheksums du fichier : ./bingcc32/Release/lesson16.exe.<br />
+Checksum CRC32  is 479aba1a.<br />
+Checksum MD5 is e0feed39ad20942314d4e0e8c7696f67.<br />
+Checksum SHA256 is 03c164a43ff6056e7a64ee44eb4b9e33a7d43b742fc62a79dfe2794aa46c6347.<br />
+Checksum SHA512 is 36901c125392ada099bf913a99eafd08a9e6dfc3cae1854faa7bdb7e00d0c008029e0a552a4976ea47d74b41d8390d8a6e273570a10fb4aa5b9aee607f72da67.<br />
+Checksum RipeMD160 is fd8eb49ddaca4ac6d1d9edc233823b00fb48f9c9.<br />
+Checksum BLAKE2B is 7f43beb6eca5c3d6cff5c35fc38054ea42985c1683bed0b7349ef6909552e1acbbd1f67bf9469ab7776a8a02f135fabe47bd593f98010427b2414ff601636335.<br />
+Calcul des cheksums du fichier : ./bingcc64/Debug/lesson16.exe.<br />
+Checksum CRC32  is 10e2f984.<br />
+Checksum MD5 is c3b962bdf078bfc89638caa2583f6aa5.<br />
+Checksum SHA256 is b7f144fefcb7a7b9c5bffd103081279e7e2628765a46a404c98af42de244ef83.<br />
+Checksum SHA512 is 55dfa224211bf7fa05e0092f3741a8a5d7ae91f7164d503e4ce507fdb679f20c788c79cd850199dbb743928910bcef3041e744624ada910d7aa0e61481d28728.<br />
+Checksum RipeMD160 is f8c3a0926e703c1157360494c71fb20f57bfe411.<br />
+Checksum BLAKE2B is 68eb8cb301bc10432b5ea4882938da0dcf16c7adc165da97ba71f677cc2781a2b1605ee6c36d6e1609dcddb3468a8a6d70506ca969b9eb57ebbff6c5ccc807dd.<br />
+Calcul des cheksums du fichier : ./bingcc64/Release/lesson16.exe.<br />
+Checksum CRC32  is 5a7facd3.<br />
+Checksum MD5 is 2e389cc9ad4425604d2ea14e5d872a39.<br />
+Checksum SHA256 is 447d53e1f11176df43896bca2a6f10c6ea824efbd20d790bfefa3bec71800c6f.<br />
+Checksum SHA512 is 1e6cec19867aedc4e9461ad1ab7cd4048be9fda33884933c66ab4f9e816bbf79c54745e1ca4c4fc6ff565c3df7b75cb582f91d47143a1e7a2f29cfe7359118a8.<br />
+Checksum RipeMD160 is 62c7b18ffcba460d23eb07c17a88e3945be97972.<br />
+Checksum BLAKE2B is 1dbb36e32e5302b4d162e86fc28cb659b15e35fc650258e0f2b31d16b4c4100256c256454a67a03f0528329a2d6b4a0988c4a18b53beaa1f44fd71d0c2ca806c.<br />
+Calcul des cheksums du fichier : ./binclang32/Debug/lesson16.exe.<br />
+Checksum CRC32  is 48a40abf.<br />
+Checksum MD5 is e42f978700b18a826e41720f1433014a.<br />
+Checksum SHA256 is ba9683d5febc9482e706457d4a243ef257205d0d355a732f4a55f00b969ac5ee.<br />
+Checksum SHA512 is 4d162c9b7f2d18e521095f07869a68908f014c95a040860ee5bbba973d503a96051c24bcdb10f3e9d84b0faa23afff978a1067a03a3ba75a580e90a4a7aa9a35.<br />
+Checksum RipeMD160 is 1acc7770c9024e5e7181e3e93419355a7f04bf66.<br />
+Checksum BLAKE2B is e1102cd8278dbe6f9f4d18f5ff300c121dbf9a394b24b16dde970dfad8b366ad4e3a96e2eaa6481285cde8c41b6709a5cac0ee34b66f96a77875ed41bfd71221.<br />
+Calcul des cheksums du fichier : ./binclang32/Release/lesson16.exe.<br />
+Checksum CRC32  is 2006af9.<br />
+Checksum MD5 is 81a442539521e4eab426656f97ea4bee.<br />
+Checksum SHA256 is 96b89632188d252111d7da67269a1e34bb1e2211bbdd60ddc082ed411d57d8a5.<br />
+Checksum SHA512 is 606f0bbd269e4a4d16ac2218d9ac336fff717b8a4832a9f623aaa23dc8488bd6de5a235e31cf06a0f259fb802d3acf2dd1c7009b85be8210ded8c8f4a4ef85a6.<br />
+Checksum RipeMD160 is 3db563ab10424d899b7ad1fcae0ad7b1a3a6008a.<br />
+Checksum BLAKE2B is 6e0061c377039995ad99c812a562f271ae5bd81eb2db5030d241aae87c23ec4902c06c151f2e1f793df612fdf3130483f55945a5fd05e4bf036a745839425325.<br />
+Calcul des cheksums du fichier : ./binclang64/Debug/lesson16.exe.<br />
+Checksum CRC32  is 1f0e8ea2.<br />
+Checksum MD5 is f07c3eedbe1b8c434bded8fb62fbf089.<br />
+Checksum SHA256 is a7047820fdca1606fb2ce14c0b91ac84d17c2c6da1ac2f175beea0c056eacdc0.<br />
+Checksum SHA512 is d335d0d098f9a0b1e0f190b4d464ffcb09401edb72c0545215d53fa237c0e7a1d6430842209ed200a1cf218a4f1310917d46b03c94fff18d785dd00f14492d37.<br />
+Checksum RipeMD160 is 5b92cc43284604efb3cbe1d44ad96ea1a88d90a3.<br />
+Checksum BLAKE2B is d763a80dabd64d98f28c95c797c7961223986934989a9b6f93767af7e26988c36c13f39070bf94a2381d56e5ce0feca12b5be8d8124650de15f0c73e23ff0d2e.<br />
+Calcul des cheksums du fichier : ./binclang64/Release/lesson16.exe.<br />
+Checksum CRC32  is bbc80e4f.<br />
+Checksum MD5 is 053f75016975da80936d214bea9f5d79.<br />
+Checksum SHA256 is dd00f22207f276e0852b2b334d5bdf5339d2ded2edb2acf84027e73561deb7e3.<br />
+Checksum SHA512 is 0470db90c4b2c02db73770f914942aad5e83184b8405c1095d34df42835f08731cf7f4e0ea1c76560fc966c73f195095738862ee760b9a78977e0dc9a6faae30.<br />
+Checksum RipeMD160 is 1926b04f0640c9dc9e18d54cc8613ff706c1f0ff.<br />
+Checksum BLAKE2B is aec1131e72fddf5faec0cd5398c1deae51da02bb52c8f7f8c6c38401b06d0245916b59fdbfe91346e3b6fdd57af61b6034b782b51f6c9414411f961b00c2ab89.<br />
+7z a lesson16_""date +"%d-%m-%Y"""_src.7z src/* res/* data/* build.cmake/* build.shell/* *.bat *.txt *.html *.md doxygen/* doc/* *.cbp *.workspace '-x!*.bak' -mhe=on -p"lesson16_tde@03!"<br />
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21<br />
+p7zip Version 16.02 (locale=fr_FR.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz (A0652),ASM,AES-NI)<br />
+Scanning the drive:<br />
+86 folders, 614 files, 3718834 bytes (3632 KiB)<br />
+Creating archive: lesson16_01-04-2023_src.7z<br />
+Items to compress: 700<br />
+Files read from disk: 614<br />
+Archive size: 766745 bytes (749 KiB)<br />
+Everything is Ok<br />
+7z a -ttar lesson16_""date +"%d-%m-%Y"""_all.tar * '-x!*.bak'  '-x!*.7z'<br />
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21<br />
+p7zip Version 16.02 (locale=fr_FR.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz (A0652),ASM,AES-NI)<br />
+Scanning the drive:<br />
+127 folders, 710 files, 4941205 bytes (4826 KiB)<br />
+Creating archive: lesson16_01-04-2023_all.tar<br />
+Items to compress: 837<br />
+Files read from disk: 837<br />
+Archive size: 5590016 bytes (5459 KiB)<br />
+Everything is Ok<br />
+7z a lesson16_""date +"%d-%m-%Y"""_all.7z *_all.tar -mhe=on -p"lesson16_tde@03!"<br />
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21<br />
+p7zip Version 16.02 (locale=fr_FR.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz (A0652),ASM,AES-NI)<br />
+Scanning the drive:<br />
+1 file, 5590016 bytes (5459 KiB)<br />
+Creating archive: lesson16_01-04-2023_all.7z<br />
+Items to compress: 1<br />
+Files read from disk: 1<br />
+Archive size: 902506 bytes (882 KiB)<br />
+Everything is Ok<br />
+rm --interactive=never *.tar || true<br />
+<font color="#0000ff">Process terminated with status 0 (0 minute(s), 2 second(s))</font><br />
+<font color="#0000ff">0 error(s), 16 warning(s) (0 minute(s), 2 second(s))</font><br />
+</tt>
+</body>
+</html>
